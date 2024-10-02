@@ -10,6 +10,7 @@ type Props = {
         id: string;
     };
 };
+import Image from "next/image";
 
 const Novel = ({ params: { id } }: Props) => {
     console.log(id)
@@ -67,7 +68,7 @@ const Novel = ({ params: { id } }: Props) => {
         <article className="max-w-5xl mx-auto text-white">
             <section className="flex gap-2 ">
                 {novel.image && (
-                    <img height={200} width={200} src={novel.image} alt="" />
+                    <Image height={200} width={200} src={novel.image} alt="" />
                 )}
 
                 <div className="p-2 flex flex-col">
