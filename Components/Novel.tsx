@@ -1,4 +1,4 @@
-import { BASE_URL } from "@/config";
+import { BASE_URL } from "../config";
 import { DELETE_NOVEL } from "../graphql/quries";
 import { GET_NOVELS } from "../graphql/quries";
 import { INovel } from "@/typings";
